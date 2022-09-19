@@ -1,6 +1,6 @@
 #This script will verify your current subpscription quota and check for all recommended VM families if you have available quota to proceed with Horizon Cloud on Azure Deployment.
 #Define Azure Region/Location where you will deploy Horizon
-$location = "westus"
+$location = "eastus"
 #Get your subscription quota config
 $actualquota = Get-AzVMUsage -Location $location 
 foreach ($item in $actualquota) {
